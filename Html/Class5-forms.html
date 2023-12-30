@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: block;
+      }
+      form {
+        margin-top: 50px;
+        border: 2px solid brown;
+        max-width: 20%;
+      }
+      .form-inputs {
+        padding: 10px;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      The police in the Lahaul and Spiti district carried out drone surveillance
+      to keep an eye on the traffic situation in the region,
+      <span> the video clip shows trails </span> of vehicles chocking the roads
+      leaving no space for parking facilities
+    </div>
+
+    <form action="http://localhost:3000/">
+      <div class="form-inputs">
+        <label>First Name<span>*</span>:</label>
+        <span
+          ><input
+            type="text"
+            value="Ram krishna"
+            placeholder="Please enter the fname..."
+            required
+            readonly
+        /></span>
+      </div>
+      <div class="form-inputs ">
+        <label>Phone Number:</label>
+        <span
+          ><input
+            type="number"
+            value="1234"
+            placeholder="Please enter number..."
+        /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Email<span>*</span>:</label>
+        <span
+          ><input type="email" placeholder="Please enter Email..." required
+        /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Password:</label>
+        <span
+          ><input type="password" placeholder="Please enter password..."
+        /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Date:</label>
+        <span><input type="date" /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Date And Time:</label>
+        <span><input type="datetime-local" /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Time:</label>
+        <span><input type="Time" /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Weeks:</label>
+        <span><input type="week" /></span>
+      </div>
+
+      <div>
+        <h3>Courses</h3>
+        <span>HTML<input type="checkbox" /></span>
+        <span>CSS<input type="checkbox" /></span>
+        <span>JS<input type="checkbox" checked /></span>
+        <span>REACT<input type="checkbox" /></span>
+      </div>
+
+      <div>
+        <h3>Gender</h3>
+        <span>Male<input type="radio" name="gender" checked /></span>
+        <span>Female<input type="radio" name="gender" /></span>
+        <span>Others<input type="radio" name="gender" /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Single File:</label>
+        <span><input type="file" /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Multipule File:</label>
+        <span><input type="file" multiple /></span>
+      </div>
+
+      <div class="form-inputs">
+        <label>Range:<label>
+        <span><input type="range" value="0" /></span>
+      </div>
+
+      <input type="submit" value="fromSubmit" />
+    </form>
+  </body>
+</html>

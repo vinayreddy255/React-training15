@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      label {
+        display: block;
+      }
+      .div-b,
+      .div-op,
+      .my-div {
+        width: 100px;
+        height: 100px;
+        border: 8px solid;
+        margin: 4px;
+        /* background-color: ; */
+        /* display: inline; */
+        display: inline-block;
+        padding: 10px;
+        border-image: url("../images/img4.jpg") 90 round;
+      }
+
+      .div-op {
+        background-color: yellow;
+        opacity: 0.2;
+      }
+      .text-over {
+        width: 300px;
+        height: 100px;
+        border: 2px solid;
+        overflow: auto;
+      }
+
+      .my-div {
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <div>
+          <label>Username</label>
+          <span><input type="text" /></span>
+        </div>
+        <div>
+          <label>Email</label>
+          <span><input type="text" /></span>
+        </div>
+        <div>
+          <label>Password</label>
+          <span><input type="text" /></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="div-op" onclick="alert('opcity is calling...')">opcity</div>
+
+    <div class="div-continer">
+      <div class="div-b">1</div>
+      <div class="div-b">2</div>
+      <div class="div-b" onclick="alert('dispaly hidden calling...')">3</div>
+      <div class="div-b">4</div>
+      <div class="div-b">5</div>
+    </div>
+
+    <div class="text-over">
+      The year is almost ending. Other than thumping music, delicious food and
+      festivities, this time of the year is also hailed as a time of massive
+      discounts. For tech aficionados, their favourite brands come up with some
+      exciting deals. Apple introduced its iPhone 15 series this year, and the
+      vanilla model is among the most sold devices in the country. If you have
+      been planning to buy an iPhone 15 this could be your chance. E-commerce
+      giants Amazon and Flipkart are giving some massive discounts that make the
+      Apple device pocket-friendly.
+    </div>
+    <div class="my-div"><h3>React Testing data...</h3></div>
+  </body>
+</html>

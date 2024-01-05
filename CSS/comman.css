@@ -4,3 +4,31 @@
     background-color: blue;
     color: #fff;
 }
+
+.div-fl{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: 10px;
+    float: left;
+}
+.div-rt{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: aquamarine;
+    clear: both;
+}
+
+.div-dis{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    background-color: bisque;
+    clear: both;
+}
+
+.div-none{
+    display: none;
+}

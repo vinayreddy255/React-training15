@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --wheight: 100px;
+        --wwidth: 100px;
+        --wbackground-color: rgb(60, 127, 228);
+        --wmargin: 20px;
+        --wborder: 2px solid;
+        --color: #fff;
+      }
+
+      #div-p {
+        background: green;
+      }
+
+      .div-r {
+        background-color: blue !important;
+      }
+
+      div {
+        background-color: yellow;
+      }
+
+      .div1,
+      .div2,
+      .div3 {
+        height: var(--wheight);
+        width: var(--wwidth);
+        border: var(--wborder);
+        background-color: var(--wbackground-color);
+        margin: var(--wmargin);
+        color: var(--color);
+      }
+
+      .p1 {
+        background-color: var(--wbackground-color);
+        color: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-r" id="div-p" style="background-color: brown">
+      React test data
+    </div>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <p class="p1">React js</p>
+  </body>
+</html>

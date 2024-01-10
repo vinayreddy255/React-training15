@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ps-div {
+        height: 50px;
+        width: 100px;
+        border: 2px solid;
+      }
+
+      .ps-div:hover {
+        height: 200px;
+        width: 200px;
+        color: aliceblue;
+        background-color: aquamarine;
+        border-radius: 20px;
+        /* background-image: url("../images/img1.jpg"); */
+      }
+      .input {
+        margin-top: 20px;
+      }
+      .input:focus {
+        background-color: blue;
+        height: 50px;
+        border-radius: 10px;
+      }
+      .input-check:checked {
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ps-div">React test</div>
+    <div>
+      <input type="text" class="input" />
+    </div>
+    <div>
+      <input type="checkbox" class="input-check" />
+    </div>
+  </body>
+</html>

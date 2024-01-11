@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .m-div {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+      }
+
+      /* # Phone */
+      @media only screen and (max-width: 480px) {
+        .m-div {
+          height: 200px;
+          width: 200px;
+          background-color: blueviolet;
+          border: 3px solid red;
+          border-radius: 50%;
+        }
+      }
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .m-div {
+          height: 200px;
+          width: 400px;
+          background-color: rgb(147, 226, 43);
+          border: 3px solid rgb(19, 119, 139);
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="m-div">123</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var name_bol = true;
+    var city = undefined;
+    var nameNull = null;
+    var ar = ["hello", 12324, true, null, undefined, "banglore", "hyderbad"];
+    var nar = [
+      "abc",
+      "hyderbad",
+      ["sam", "banglore", "123214"],
+      90,
+      12,
+      ["india", ["chennai", ["pune", "usa"]]],
+      678,
+    ];
+    var p = nar[5][1];
+    console.log("name_bol>>", name_bol);
+    console.log(typeof name_bol);
+    console.log(typeof city);
+    console.log(typeof nameNull);
+
+    console.log(typeof ar);
+    console.log(ar);
+    console.log(ar[1]);
+    console.log(ar[5]);
+
+    console.log(nar.length);
+    console.log(nar[2][2]);
+    console.log(nar[5][1][1][1]);
+    console.log(p);
+  </script>
+</html>

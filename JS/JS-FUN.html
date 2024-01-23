@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="add"></h2>
+    <h2 id="sub"></h2>
+    <h2 id="mul"></h2>
+    <h2 id="div"></h2>
+  </body>
+  <script>
+    function loopIteration(num, a) {
+      for (var i = a; i <= num; i++) {
+        console.log(i);
+      }
+    }
+    loopIteration(10, 5);
+    // loopIteration(50);
+
+    function arthMetic(a, b, i) {
+      var reslut = 0;
+      if (i == "+") {
+        reslut = a + b;
+      } else if (i == "-") {
+        reslut = a - b;
+      } else if (i == "*") {
+        reslut = a * b;
+      }
+      return reslut;
+    }
+    arthMetic(20, 30, "+"); //50
+    document.getElementById("add").innerHTML = arthMetic(20, 30, "+"); //50
+    document.getElementById("sub").innerHTML = arthMetic(20, 30, "-"); //-10
+    document.getElementById("mul").innerHTML = arthMetic(20, 30, "*"); //600
+    document.getElementById("div").innerHTML = arthMetic(20, 30, "/"); // 0
+
+    // var ar = ["a", "b", "c", "a", "d"];
+    // for (var i = 0; i < ar.length; i++) {
+    //   if (ar[i] == "a") {
+    //     console.log(i);
+    //   }
+    // }
+  </script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="num1" />
+      <input type="number" id="num2" />
+    </div>
+    <div>
+      <button onclick="arthMetichOp('add')">+</button>
+      <button onclick="arthMetichOp('sub')">-</button>
+      <button onclick="arthMetichOp('mul')">*</button>
+    </div>
+    <textarea id="result" disabled></textarea>
+    <div>KEY up event:<input type="" onkeyup="keyup()" /></div>
+    <div>KEY down event:<input type="" onkeydown="keyDown()" /></div>
+  </body>
+  <script>
+    function arthMetichOp(input) {
+      var num1 = Number(document.getElementById("num1").value);
+      var num2 = Number(document.getElementById("num2").value);
+      if (input == "add") {
+        document.getElementById("result").innerHTML = num1 + num2;
+      } else if (input == "sub") {
+        document.getElementById("result").innerHTML = num1 - num2;
+      } else if (input == "mul") {
+        document.getElementById("result").innerHTML = num1 * num2;
+      }
+    }
+
+    function keyup() {
+      console.log("keyp calling......");
+    }
+
+    function keyDown() {
+      console.log("key down calling,,,");
+    }
+  </script>
+</html>

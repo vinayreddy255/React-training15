@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="inutNum" /><button onclick="genratingTextBoxs()">
+      Click
+    </button>
+    <div id="textBoxs"></div>
+  </body>
+  <script>
+    function genratingTextBoxs() {
+      var nums = document.getElementById("inutNum").value;
+      for (var i = 1; i <= nums; i++) {
+        document.getElementById("textBoxs").innerHTML +=
+          "<div>" + i + "<input type=text value='" + i + "'/></div>";
+      }
+    }
+  </script>
+</html>

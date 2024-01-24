@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="textshow()">Show</button>
+    <button onclick="hideText()">Hide</button>
+    <div id="showText"></div>
+    <button onclick="counterFn()">Counter</button>
+    <h2 id="counterText"></h2>
+  </body>
+  <script>
+    var count = 0;
+    function textshow() {
+      document.getElementById("showText").innerHTML =
+        "<h2>Showing text...</h2>";
+    }
+
+    function hideText() {
+      document.getElementById("showText").innerHTML = "";
+    }
+
+    function counterFn() {
+      count = count + 1;
+      document.getElementById("counterText").innerHTML = count;
+    }
+  </script>
+</html>

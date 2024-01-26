@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * length
+     * push
+     * unshift
+     * pop
+     * shift
+     * indexOf
+     * lastIndexOf
+     */
+    var ar = [
+      "Ai",
+      "Apple",
+      "Nokia",
+      "Banglore",
+      "Hyderbad",
+      "Pune",
+      "Banglore",
+    ];
+    var k = ["a", "b", "c", "d", "e", "f", "g"];
+    console.log(ar);
+    ar.push("Chennaie");
+    ar.unshift("Delhi");
+    console.log("before pop>>>", k);
+    k.pop();
+    k.pop();
+    k.shift();
+    k.shift();
+    console.log("after pop>>", k);
+    console.log(ar);
+    console.log("index postion>>>", ar.indexOf("Banglore"));
+
+    console.log(ar.length);
+    var nar = [];
+    for (var i = 1; i <= 20; i++) {
+      nar.push(i);
+    }
+    console.log(nar);
+    var a = [];
+    var b = [];
+
+    for (var i = 0; i < ar.length; i++) {
+      if (i <= 2) {
+        a.push(ar[i]);
+      } else {
+        b.push(ar[i]);
+      }
+    }
+    console.log(a);
+    console.log(b);
+  </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * join
+     * reverse
+     * concat
+     * includes
+     * isArray
+     */
+    var ar = ["Ai", "Apple", "Nokia", "Banglore", "Hyderbad", "Pune"];
+    var ar1 = ["a", "b", "c"];
+    var ar2 = ["k", "l", "M", "n"];
+    var ar3 = [1, 2, 3, 4, 5];
+    var ar4 = [].concat(ar3, ar1, ar2);
+    var obj = { name: "abc", age: 98 };
+    //[a,b, c, k, l, m, n, 1,2,3,4,5]
+    console.log(ar);
+    console.log(ar.join(" -"));
+    console.log(ar.reverse());
+    console.log("merging array>>>", ar4);
+    console.log(ar.includes("Ai")); //fasel
+    console.log("obj check is array:=", Array.isArray(obj));
+    console.log("obj check is array:=", Array.isArray(ar4));
+  </script>
+</html>

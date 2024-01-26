@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inuput" onkeyup="keyDown()" />
+    <button>click</button>
+    <br />
+    <input type="text" id="inuput" onkeyup="keyDown()" />
+  </body>
+  <script>
+    /**
+     * length
+     * toUpperCase
+     * toLowerCase
+     * charAt
+     * indexOf
+     * lastIndexOf
+     * includes
+     * replace
+     * replaceAll
+     * toString
+     * split
+     * substr
+     * trim
+     */
+    var str = "Hello,react,java,cakl,java,test,html,css,java";
+    var ar = [1, 2, 3, 5];
+    var obj = { name: "ram", age: 22 };
+    console.log(str.toUpperCase());
+    function keyDown() {
+      document.getElementById("inuput").value = document
+        .getElementById("inuput")
+        .value.toUpperCase();
+    }
+    console.log(str[0]);
+    console.log(str.toLowerCase());
+    console.log(str.charAt(1));
+    console.log(str.indexOf("a"));
+    console.log(str.lastIndexOf("a")); //
+    console.log(str.indexOf("hi")); // -1
+    console.log(str.includes("java")); //true
+    console.log(str.replace("java", "Angular"));
+    console.log(str.replaceAll("java", "Angular"));
+    console.log(ar);
+    console.log(ar.toString());
+
+    var strtoAr = str.split(",");
+    console.log(strtoAr);
+    console.log(str.substr(1, 6));
+    console.log(str.substr(6, str.length - 10));
+    var nstr = "   hello React  ";
+    // console.log(obj.toString());
+    console.log(nstr);
+    console.log(nstr.trim());
+  </script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * forEach
+     * filter
+     * map
+     *
+     *
+     */
+    var ar = ["a", "b", "v", "k", "l", "e", "f", "m", "n"];
+
+    var salary = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
+    ar.forEach(function (e, i, a) {
+      console.log(e, "----", i, "---", a);
+    });
+
+    var flAr = salary.filter(function (e, i, a) {
+      return e > 500;
+    });
+    console.log("salary---", salary);
+    console.log("filter ar...", flAr);
+
+    var mapAr = salary.map(function (item) {
+      return item * 5;
+    });
+    console.log("mapAr...", mapAr);
+
+    var arobj = [
+      { name: "ram", salar: 1000 },
+      { name: "vijay", salar: 2000 },
+      { name: "ajay", salar: 3000 },
+      { name: "sam", salar: 4000 },
+      { name: "krish", salar: 5000 },
+      { name: "sidhu", salar: 6000 },
+    ];
+    console.log("original arobj---", arobj);
+
+    /*var salr3 = arobj
+      .filter(function (element) {
+        return element.salar > 3000;
+      })
+      .map(function (e) {
+        return e.name;
+      });*/
+
+    var salr3 = arobj.filter(function (element) {
+      return element.salar > 3000;
+    });
+
+    var salrnames = salr3.map(function (e) {
+      return e.name;
+    });
+    console.log(salr3);
+    console.log(salrnames);
+
+    //[sam,krish, sidhu]-->who has more than 3000 salary
+  </script>
+</html>

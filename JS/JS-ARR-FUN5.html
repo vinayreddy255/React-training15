@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * sort
+     * some
+     * every
+     * find
+     * reduce
+     *
+     */
+    var ar = ["a", "b", "v", "k", "l", "e", "f", "m", "n"];
+    var nar = [1, 4, 5, 3, 6, 10, 20, 11, 12, 7];
+    ar.sort().reverse();
+    nar.sort(function (a, b) {
+      return a - b;
+    });
+    console.log(ar);
+    console.log(nar);
+
+    var somAr = nar.some(function (e) {
+      return e > 19;
+    });
+
+    var everyAr = nar.every(function (e) {
+      return e >= 1;
+    });
+
+    var fnAR = nar.find(function (e) {
+      return e > 6;
+    });
+    console.log("somAr...", somAr);
+    console.log("everyAr...", everyAr);
+    console.log("fnAR...", fnAR);
+  </script>
+</html>

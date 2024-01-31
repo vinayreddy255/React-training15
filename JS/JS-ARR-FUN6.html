@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * reduce
+     */
+    var ar = [1, 5, 6, 4];
+    var nr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var sumAr = ar.reduce(function (a, i) {
+      return a + i;
+    }, 10);
+
+    console.log(sumAr);
+
+    var fr = nr.reduce(function (a = [], i) {
+      if (i > 5) {
+        a.push(i);
+      }
+      return a;
+    }, []);
+
+    var mr = nr.reduce(function (a = [], i) {
+      a.push(i * 5);
+      return a;
+    }, []);
+
+    console.log("filter ar---", fr);
+    console.log("map ar---", mr);
+  </script>
+</html>

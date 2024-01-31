@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * let
+     * const
+     *
+     */
+    console.log("city...", city); // undefined
+    var city = "Bangalore";
+    console.log("city...", city); // banglores
+    var city = "Hyderbad";
+    console.log("new city...", city); //Hyderbad
+
+    // console.log("name---", name); // undefined
+    let name = "Ram123";
+    console.log("name---", name); //Ram123
+
+    if (true) {
+      var age = 123;
+      let name1 = "hello";
+      console.log("block scope---", age); //123
+      console.log("blcok scope.....", name1); // hello
+    }
+
+    console.log("block scope---", age); //123
+    // console.log("blcok scope.....", name1); // Ram123
+    let myCity;
+    myCity = "hydrbad";
+    myCity = "Chennaie";
+    console.log("mycity---", myCity); //
+
+    const salary = 89990;
+    // salary = 25555;
+    const obj = { name: "kirn", age: 25 };
+    obj.age = 28;
+    console.log("salary---", salary);
+    console.log(obj);
+    const ar = [1, 2, 3, 4];
+    ar.push(9);
+    ar[5] = 10;
+    console.log(ar);
+  </script>
+</html>

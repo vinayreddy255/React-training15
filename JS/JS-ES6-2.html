@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     *  template litrerl(``)
+     * destrcuring
+     * ...(spred operator)
+     * ...(rest operator)
+     * default parms
+     * arrow function
+     * object.keys, object.values, object.entries
+     * for in
+     * for of
+     * setTimeout
+     * setInterval
+     * promise
+     * import
+     * export
+     * genrators
+     * flat
+     * async/await
+     * filter
+     * map
+     * reduce
+     * forEach
+     *
+     */
+    const city = "Hyderbad";
+    const age = 25;
+    const name = "Ram";
+    const output1 =
+      "My name is " + name + ", age is " + age + " and city is " + city;
+    const output2 = `My name is  ${name}, age is ${age} and city is ${city}`;
+    console.log(output1);
+    console.log(output2);
+    //My name is Ram, age is 25 and city is Hyderbad
+    const obj = {
+      name: "Ram",
+      age: 26,
+      newCity: "Bangalore",
+      pinCode: 12343,
+      address: { landMark: "near temple", doorNum: 1999 },
+    };
+
+    const {
+      pinCode,
+      newCity,
+      name: newName,
+      address: { landMark, doorNum },
+    } = obj;
+
+    console.log(newCity, pinCode);
+    console.log("newName..", newName);
+    // console.log("address..", address); //{ landMark: "near temple", doorNum: 1999 }
+    console.log("address..", landMark);
+    console.log("doorNum..", doorNum);
+
+    const ar = ["apple", "orange", "mango", "grape"];
+    const [a, o, m, g] = ar;
+    const [, , mm] = ar;
+    console.log(a, o, m, g);
+    console.log(mm);
+  </script>
+</html>

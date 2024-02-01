@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     *  ...(rest operator)
+     * default parms
+     * arrow function
+     *  object.keys, object.values, object.entriess
+     */
+    function restFunc(a, b, ...c) {
+      console.log(a, b, c);
+      //   console.log(arguments.length);
+    }
+    restFunc(10, 20, 30, 40, "a", "b", "x", "app", "data", "test", "hkkl");
+
+    function defaultParms(a = 10, b = 50) {
+      //20+undefined = NaN
+      const c = a + b;
+      return c;
+    }
+    console.log(defaultParms(10, 20)); //30
+    console.log(defaultParms()); //70
+    console.log(defaultParms(20, "hi")); // 20hi
+
+    function arth(a, b) {
+      return a + b;
+    }
+
+    const afnc = (a, b) => a + b;
+
+    const arthMeticOp = (a, b, c) => {
+      let r = 0;
+      if (c == "+") {
+        r = a + b;
+      } else if (c == "-") {
+        r = a - b;
+      } else if (c == "*") {
+        r = a * b;
+      }
+      //   console.log("arguments---", arguments.length); not avilable in arrrow function
+      return r;
+    };
+
+    console.log(afnc(50, 90));
+    console.log(arthMeticOp(50, 90, "+"));
+    console.log(arthMeticOp(50, 90, "*"));
+
+    const obj = {
+      name1: "deeecode",
+      age: 200,
+      print1: function () {
+        console.log(this.name1);
+      },
+      print2: () => {
+        console.log(this);
+      },
+    };
+
+    obj.print1();
+    obj.print2();
+    const keys = Object.keys(obj);
+    console.log("keys...", keys);
+    const values = Object.values(obj);
+    console.log("value...", values);
+  </script>
+</html>

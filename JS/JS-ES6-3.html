@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     *  ...(spred operator)
+     */
+    let a = 10;
+    let b = 20;
+    [a, b] = [b, a];
+    console.log("a--", a);
+    console.log("b--", b);
+    //a :20
+    //b: 10
+    const obj1 = { name: "ram", age: 12, city: "bangalore" };
+    const obj2 = { ...obj1 };
+    obj2.name = "sam";
+    obj2.city = "Hyderbad";
+
+    console.log("obj1...", obj1);
+    console.log("obj2...", obj2);
+
+    const obj3 = {
+      name: "kirn",
+      age: 23,
+      address: { pinCode: 123, city: "xya", landMark: "near postOffice" },
+    };
+
+    // const obj4 = JSON.parse(JSON.stringify(obj3));
+    const obj4 = structuredClone(obj3);
+    obj4.age = 45;
+    obj4.address.city = "Bangalore";
+    obj4.address.landMark = "near Temple";
+
+    console.log("obj3...", obj3);
+    console.log("obj4...", obj4);
+
+    const ab = [1, 2, 3, 4, 5, 6, 7];
+    const [a1, b1, ...c1] = ab;
+    console.log(a1, b1, c1);
+    const str = "Hello test";
+    const ar = [...str];
+    console.log(ar);
+  </script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const obj = [
+      { name: "abc", id: 1, salary: 2000 },
+      { name: "test", id: 2, salary: 3000 },
+      { name: "data", id: 1, salary: 4000 },
+      { name: "hello", id: 3, salary: 5000 },
+      { name: "kill", id: 2, salary: 6000 },
+    ];
+
+    const output = {};
+
+    obj.forEach((e) => {
+      if (!output[e.id]) {
+        output[e.id] = [];
+        output[e.id].push(e);
+      } else {
+        output[e.id].push(e);
+      }
+    });
+
+    console.log(Object.values(output));
+
+    const output2 = obj.reduce((a = {}, e) => {
+      if (!a[e.id]) {
+        a[e.id] = [];
+        a[e.id].push(e);
+      } else {
+        a[e.id].push(e);
+      }
+      return a;
+    }, {});
+    console.log(output2);
+    // const output1 = [
+    //   [
+    //     { name: "abc", id: 1, salary: 2000 },
+    //     { name: "data", id: 1, salary: 4000 },
+    //   ],
+    //   [
+    //     { name: "test", id: 2, salary: 3000 },
+    //     { name: "kill", id: 2, salary: 6000 },
+    //   ],
+    //   [{ name: "hello", id: 3, salary: 5000 }],
+    // ];
+  </script>
+</html>

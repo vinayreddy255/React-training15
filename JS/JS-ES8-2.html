@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <button onclick="session()">Store Seesion</button>
+    <button onclick="local()">Store Local</button>
+  </head>
+  <body></body>
+  <script>
+    const ar = [1, 2, 3, 4, 5, 2, 3, 6, 2, 1];
+    const unq = [...new Set(ar)];
+    const str = "hello react";
+    console.log("ar>>", ar);
+    console.log("unq>>", unq);
+    const a = 10;
+    const city = a ? "Hyderbad" : "Banglore";
+    console.log("city...", city);
+
+    function session() {
+      sessionStorage.setItem("name", "krishan");
+    }
+    function local() {
+      localStorage.setItem("city", "Hyderbad");
+    }
+  </script>
+</html>

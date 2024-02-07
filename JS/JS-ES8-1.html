@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const obj = {
+      name: "ram",
+      age: 12,
+      city: "hyderbad",
+      pinCode: 213,
+      phone: 2121,
+    };
+
+    for (let k in obj) {
+      console.log(k, ":", obj[k]);
+    }
+    console.log(obj.name);
+    // console.log(obj.age);
+    const ar = [1, 2, 3, 4, 5];
+    for (let i of ar) {
+      console.log(ar[i - 1]);
+    }
+  </script>
+</html>

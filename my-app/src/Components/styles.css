@@ -1,0 +1,22 @@
+.h1-text {
+    color: peru;
+    background: gray;
+    width: 400px;
+    font-size: 24px;
+}
+
+.li-even {
+    color: purple;
+    font-size: 18px;
+    background: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+}
+
+.li-odd {
+    color: green;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:orangered ;
+    width: 400px;
+}

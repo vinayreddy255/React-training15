@@ -5,7 +5,7 @@ import StateComponent from "./Components/StateComponent";
 import CondationlReder from "./Components/CondationlReder";
 import ComponetA from "./Components/ComponetA";
 import ListAndKeys from "./Components/ListAndKeys";
-
+import Forms from "./Components/Forms";
 function App() {
   return (
     <div>
@@ -13,7 +13,16 @@ function App() {
       <StateComponent /> */}
       {/* <CondationlReder/>
       <ComponetA/> */}
-      <ListAndKeys />
+      {/**
+       * 14-02-2024 
+      <ListAndKeys /> 
+      */}
+
+      {/**
+       * Form Handling
+       * 15-02-2024
+       */}
+      <Forms />
     </div>
   );
 }

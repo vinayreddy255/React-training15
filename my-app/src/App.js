@@ -6,9 +6,12 @@ import CondationlReder from "./Components/CondationlReder";
 import ComponetA from "./Components/ComponetA";
 import ListAndKeys from "./Components/ListAndKeys";
 import Forms from "./Components/Forms";
+import LifeCycleMethods from "./Components/LifeCycleMethods";
+import PureComponetMethod from "./Components/PureComponetMethod";
 function App() {
+  const list = ["Apple", "Ornage", "Grape"];
   return (
-    <div>
+    <>
       {/* <Header />
       <StateComponent /> */}
       {/* <CondationlReder/>
@@ -22,8 +25,15 @@ function App() {
        * Form Handling
        * 15-02-2024
        */}
-      <Forms />
-    </div>
+      {/* <Forms /> */}
+
+      <LifeCycleMethods name="abc" />
+      <PureComponetMethod empObj={{ name: "ram", age: 20 }}>
+        {list.map((e, i) => (
+          <li key={`${e}-${i}`}>{e}</li>
+        ))}
+      </PureComponetMethod>
+    </>
   );
 }
 

@@ -8,6 +8,11 @@ import ListAndKeys from "./Components/ListAndKeys";
 import Forms from "./Components/Forms";
 import LifeCycleMethods from "./Components/LifeCycleMethods";
 import PureComponetMethod from "./Components/PureComponetMethod";
+import ClickConter from "./Components/ClickConter";
+import HoverCounter from "./Components/HoverCounter";
+import AComponent from "./Components/ContextCompoent/AComponent";
+import DComponent from "./Components/ContextCompoent/DComponent";
+import { MyContext } from "./Components/ContextCompoent/ContextAppi";
 function App() {
   const list = ["Apple", "Ornage", "Grape"];
   return (
@@ -27,12 +32,24 @@ function App() {
        */}
       {/* <Forms /> */}
 
-      <LifeCycleMethods name="abc" />
+      {/* <LifeCycleMethods name="abc" />
       <PureComponetMethod empObj={{ name: "ram", age: 20 }}>
         {list.map((e, i) => (
           <li key={`${e}-${i}`}>{e}</li>
         ))}
-      </PureComponetMethod>
+      </PureComponetMethod> */}
+
+      {/**
+       * Hoc expmples
+       */}
+      {/* <ClickConter />
+      <HoverCounter /> */}
+
+      {/**---------Context------------ */}
+      <MyContext.Provider value={list}>
+        <AComponent />
+        <DComponent />
+      </MyContext.Provider>
     </>
   );
 }

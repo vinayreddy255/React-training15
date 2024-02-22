@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-function FnUseEffect() {
+function FnUseEffect(props) {
   const [count, setCount] = useState(0);
   const [age, setAge] = useState(5);
 
@@ -22,7 +22,7 @@ function FnUseEffect() {
   useEffect(() => {
     return () => {};
   }, []);
-
+  console.log(props);
   return (
     <div>
       <h2>FnUseEffect</h2>

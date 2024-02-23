@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import FncState from "./Components/FncState";
 import FncMap from "./Components/FncMap";
@@ -10,7 +9,8 @@ import {
 } from "./Components/ContextApi/ApiContext";
 import ComponetA from "./Components/ComponetA";
 import { posts } from "./post";
-import UseRefComponent from "./Components/useRefComponent";
+import UseRefComponent from "./Components/UseRefComponent";
+import ApiCalls from "./Components/ApiCalls";
 function App() {
   const empObj = { name: "Ram", sal: 2000, age: 22, city: "Hyderbad" };
 
@@ -19,13 +19,15 @@ function App() {
       {/* <FncState />
       <FncMap /> */}
       <FnUseEffect empDetiles={empObj} />
-      <UseRefComponent />
+      {/* <UseRefComponent /> */}
 
       {/* <MyProvidder value={empObj}>
         <ApiContextProvider value={posts}>
           <ComponetA />
         </ApiContextProvider>
       </MyProvidder> */}
+
+      <ApiCalls />
     </div>
   );
 }
